@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import '../ProjectList/ProjectList.css';
 import Bg1 from '../../assets/images/bg1.jpg'
 import ProjectView from '../ProjectView/PrjoectView'
-import Backdrop from '../UI/backdrop/Backdrop'
+import Backdrop from '../UI/Backdrop/Backdrop'
 
 class ProjectList extends Component {
   state = {
     projects: [
-      {title: "project 1", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 1"},
-      {title: "project 2", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 2"},
-      {title: "project 3", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 3"},
-      {title: "project 4", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 4"}
+      {title: "CELLULAR AUTOMATON", background: Bg1, gif: "gif", github: 'www.google.com', website: 'www.google.com', description: "to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 "},
+      {title: "RICIPICI", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 2"},
+      {title: "SIMPLE ASSET TRACKER", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 3"},
+      {title: "BURGER BUILDER", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 4"},
+      {title: "ACEBOOK", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 4"}
     ],
     enlarge: false,
     enlargedProject: {
@@ -71,7 +72,8 @@ class ProjectList extends Component {
         <div id="RightSideList">
         {this.state.projects.map(project => {
           return (
-            <div className="Card" key={project.title} onClick={() => this.showProject(project)}>
+            <div
+            className="Card" key={project.title} onClick={() => this.showProject(project)}>
               <img src={project.background} alt="card_bg"></img>
             </div> )
         })}

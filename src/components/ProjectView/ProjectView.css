@@ -1,9 +1,9 @@
 #ProjectViewContainer {
   z-index: 105;
   position: fixed;
-  margin: 7% 0 0 13%;
-  width: 74%;
-  height: 75%;
+  margin: 7% 0 0 15%;
+  width: 70%;
+  height: 72%;
   background-color: rgb(250, 247, 233);
   background-repeat: no-repeat;
   background-size: cover; 
@@ -29,21 +29,37 @@
 }
 
 #Title {
-
-}
-
-#Github {
-
-}
-
-#Website {
-
-}
-
-#Gif {
-  
+  margin: 25% 0 0 0;
+  letter-spacing: 8px;
+  font-family: 'Wallpoet', cursive;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 2.4vw;
 }
 
 #Description {
+  text-align: left;
+  font-family: 'Wallpoet', cursive;
+  letter-spacing: 0px;
+  height: 30%;
+  padding: 5%;
+  font-size: 1.2vw;
+}
 
+#Github {
+  float: left;
+  width: 50%;
+  height: 10%;
+}
+
+#Website {
+  float: left;
+  width: 50%;
+  height: 10%;
+}
+
+#Gif {
+  margin: 30% 0 0 0;
+  height: 50%;
+  width: 100%; 
 }
