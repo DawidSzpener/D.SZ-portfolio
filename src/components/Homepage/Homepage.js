@@ -10,7 +10,12 @@ class Homepage extends Component {
 
     return (
       <div className='HomepageContainer'>
-        LOL
+        <div className='HomepageText'>
+          HELLO
+          {/* MY NAME IS DAWID */}
+          {/* I AM A WEB ENGINEER */}
+          {/* ARROW */}
+        </div>
       </div>
     )
   }
