@@ -9,9 +9,10 @@ class Homepage extends Component {
 
   render() {
     return (
-      <div id='HomepageText'>
-        <h1>
-          <SplitText copy="WITAM JESTEM DAWID"/>
+      <div id='HomepageBg'>
+        <h1 style={{fontSize: "8em"}}>DAWID SZPENER</h1>
+        <h1 style={{fontSize: "5em", padding: "0 25% 0 25%", width: "50%"}}>
+          <SplitText copy=" THE SOFTWARE ENGINEER "/>
         </h1>
       </div>
     )
