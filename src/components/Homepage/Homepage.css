@@ -1,4 +1,4 @@
-.HomepageContainer {
+#HomepageContainer {
   top: 5%;
   left: 0;
   background: linear-gradient(to right, rgba(247, 64, 51, 0.897) 63%, rgba(230, 74, 47, 0.842) 20%, white 0%, white 50%);
@@ -7,11 +7,8 @@
   position: absolute;
 }
 
-.HomepageText {
+#HomepageText {
   position: absolute;
-  padding-right: 25%;
-  left: 40%;
-  top: 30%;
   font-weight: 900;
-  font-size: 10em;
+  font-size: 5em;
 }
