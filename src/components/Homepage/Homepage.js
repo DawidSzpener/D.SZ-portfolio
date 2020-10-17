@@ -8,17 +8,11 @@ class Homepage extends Component {
   }
 
   render() {
-
     return (
-      <div id='HomepageContainer'>
-        <div id='HomepageText'>
-          <h1 aria-label="Text">
-            <span aria-hidden="true">T</span>
-            <span aria-hidden="true">e</span>
-            <span aria-hidden="true">x</span>
-            <span aria-hidden="true">t</span>
-          </h1>
-        </div>
+      <div id='HomepageText'>
+        <h1>
+          <SplitText copy="WITAM JESTEM DAWID"/>
+        </h1>
       </div>
     )
   }

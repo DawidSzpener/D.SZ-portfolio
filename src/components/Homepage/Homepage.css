@@ -1,14 +1,56 @@
-#HomepageContainer {
-  top: 5%;
-  left: 0;
-  background: linear-gradient(to right, rgba(247, 64, 51, 0.897) 63%, rgba(230, 74, 47, 0.842) 20%, white 0%, white 50%);
-  width: 80%;
-  height: 90%;
-  position: absolute;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 #HomepageText {
   position: absolute;
-  font-weight: 900;
-  font-size: 5em;
+  width: 100%;
+  height: 100%;
+  background-color: #023c4b;
+}
+
+h1 {
+  letter-spacing: 12px;
+  font-family: 'Piedra', cursive;
+  font-size: 8em;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
+
+h1 span span {
+  position: relative;
+  animation: move-text-color 0.75s forwards;
+  bottom: -1em;
+  opacity: 0;
+}
+
+/* h1 span span:nth-child(2n) { color: #8E7C93; }
+h1 span span:nth-child(3n) { color: #D0A5C0; }
+h1 span span:nth-child(4n) { color: #F6C0D0; } */
+
+@keyframes move-text-color {
+  0% {
+    bottom: -0.2em;
+    opacity: 1;
+    color: #3E5C76;
+  }
+  
+  50% {
+    bottom: 0.2em;
+    color: #EC058E;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+    color: #cb3126;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    transform: scale(0.75);
+  }
 }
