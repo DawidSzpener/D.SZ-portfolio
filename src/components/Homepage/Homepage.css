@@ -23,7 +23,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.7;
-  animation-delay: 5;
+	-webkit-animation: roll-in-left 1.2s ease-out both;
+  animation: roll-in-left 1.2s ease-out both;
+  animation-delay: 3.7s;
+  -webkit-animation-delay: 3.7s;
 }
 
 h1 {
@@ -56,6 +59,31 @@ h1 span span {
     bottom: 0;
     opacity: 1;
     color: #cb3126;
+  }
+}
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+    opacity: 1;
   }
 }
 

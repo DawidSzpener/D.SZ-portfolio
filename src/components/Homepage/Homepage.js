@@ -9,6 +9,10 @@ class Homepage extends Component {
     loading: true
   }
 
+  reDirect = () => {
+    this.props.history.push('/list')
+  }
+
   render() {
     return (
       <div id='HomepageBg'>
@@ -18,7 +22,7 @@ class Homepage extends Component {
         <h1 style={{fontSize: "5em", padding: "0 25% 0 24%", margin: "5% 0 0 0"}}>
           <PortfolioHighlight copy="PORTFOLIO"/>
         </h1>
-        <div id="HomepageFace">
+        <div id="HomepageFace" onClick={() => this.reDirect()}>
         </div>
       </div>
     )
