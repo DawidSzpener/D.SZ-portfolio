@@ -14,19 +14,17 @@
 
 #HomepageFace {
   cursor: pointer;
+  margin: 2% 0 0 0%;
   display: inline-block;
-  margin: 5% 0 0 0;
-  left: 35%;
-  width: 15%;
-  height: 25%;
+  width: 19%;
+  height: 45%;
   background-image: url('../../assets/images/face.png');
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.7;
 	-webkit-animation: roll-in-left 1.2s ease-out both;
   animation: roll-in-left 1.2s ease-out both;
-  animation-delay: 3.7s;
-  -webkit-animation-delay: 3.7s;
+  animation-delay: 2.4s;
+  -webkit-animation-delay: 2.4s;
 }
 
 h1 {
@@ -41,6 +39,7 @@ h1 span span {
   animation: move-text-color 0.75s forwards;
   bottom: -1em;
   opacity: 0;
+  word-wrap: normal;
 }
 
 @keyframes move-text-color {
@@ -65,24 +64,24 @@ h1 span span {
 @-webkit-keyframes roll-in-left {
   0% {
     -webkit-transform: translateX(-800px) rotate(-540deg);
-      transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
-      transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
 @keyframes roll-in-left {
   0% {
     -webkit-transform: translateX(-800px) rotate(-540deg);
-      transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
-      transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }

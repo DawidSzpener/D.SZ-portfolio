@@ -6,7 +6,7 @@ class SplitText extends Component {
     return(
       <span aria-label={this.props.copy} role={this.props.role}>
       {this.props.copy.split("").map(function(char, index){
-        const style = {"animationDelay": (2.7 + index / 10) + "s"};
+        const style = {"animationDelay": (1.9 + index / 10) + "s"};
         return <span
           aria-hidden="true"
           key={index}
