@@ -7,15 +7,25 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #f8e4e4;
+  background-color: rgb(250, 247, 233);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#HomepageFace {
+  display: inline-block;
+  margin: 5% 0 0 0;
+  left: 25%;
+  width: 25%;
+  height: 25%;
+  background-color: crimson;
 }
 
 h1 {
   letter-spacing: 12px;
-  font-family: 'Piedra', cursive;
+  font-family: 'Wallpoet', cursive;
   text-align: center;
   font-weight: 600;
-  width: 100%;
 }
 
 h1 span span {
@@ -24,10 +34,6 @@ h1 span span {
   bottom: -1em;
   opacity: 0;
 }
-
-/* h1 span span:nth-child(2n) { color: #8E7C93; }
-h1 span span:nth-child(3n) { color: #D0A5C0; }
-h1 span span:nth-child(4n) { color: #F6C0D0; } */
 
 @keyframes move-text-color {
   0% {
