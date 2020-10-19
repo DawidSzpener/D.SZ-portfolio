@@ -5,4 +5,27 @@
   height: 100%;
   position: absolute;
   background-size: cover;
+  overflow: auto;
+}
+
+.Card {
+  display: inline-block;
+  width: 510px;
+  height: 380px;
+  background-color: rgb(245, 211, 197);
+  border: 2px #eee;
+  box-shadow: 0 32px 44px black;
+  padding: 5px;
+  margin: 45px 30px 45px 30px;
+  align-content: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Card img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
