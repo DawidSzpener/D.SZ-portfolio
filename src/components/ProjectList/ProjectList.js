@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../ProjectList/ProjectList.css';
 
 class ProjectList extends Component {
   state = {
@@ -6,8 +7,8 @@ class ProjectList extends Component {
 
   render() {
     return(
-      <div>
-
+      <div id="ProjectListContainer">
+        
       </div>
     )
   }

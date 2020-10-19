@@ -27,6 +27,10 @@
   -webkit-animation-delay: 2.4s;
 }
 
+#HomepageFace:hover {
+  background-image: url('../../assets/images/sayanface.png');
+}
+
 h1 {
   letter-spacing: 12px;
   font-family: 'Wallpoet', cursive;
