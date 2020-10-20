@@ -12,10 +12,28 @@ class ProjectList extends Component {
       {title: "project 4", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 4"}
     ],
     enlarge: false,
+    enlargedProject: {
+      title: '',
+      github: '',
+      website: '',
+      description: '',
+      background: '',
+      gif: ''
+    }
   }
 
-  showProject = () => {
-    this.setState({ enlarge: true })
+  showProject = (project) => {
+    this.setState({ 
+      enlarge: true,
+      enlargedProject: {
+        title: project.title,
+        github: project.github,
+        website: project.website,
+        description: project.description,
+        background: project.background,
+        gif: project.gif
+      }
+    })
   }
 
   hideProject = () => {
@@ -25,14 +43,23 @@ class ProjectList extends Component {
   render() {
     let enlargedProject = null
     if (this.state.enlarge) {
-      enlargedProject = <h1>lol</h1>
+      enlargedProject = <ProjectView
+      className="Card"
+      onClick={() => this.showProject()}
+      title={this.state.enlargedProject.title}
+      github={this.state.enlargedProject.github}
+      website={this.state.enlargedProject.website}
+      description={this.state.enlargedProject.description}
+      gif={this.state.enlargedProject.gif}
+      background={this.state.enlargedProject.background}
+      /> 
     }
 
     return(
       <div id="ProjectListContainer">
         {enlargedProject}
         {this.state.projects.map(project => {
-          return <div className="Card" onClick={() => this.showProject()}>
+          return <div className="Card" key={project.title} onClick={() => this.showProject(project)}>
               <img src={project.background} alt="card_bg"></img>
             </div>
         })}

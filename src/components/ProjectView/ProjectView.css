@@ -1,0 +1,8 @@
+#ProjectViewContainer {
+  z-index: 10;
+  position: fixed;
+  margin: 5% 0 0 5%;
+  width: 90%;
+  height: 85%;
+  background-color: white;
+}
