@@ -1,12 +1,17 @@
 #ProjectViewContainer {
   z-index: 105;
   position: fixed;
-  margin: 4% 0 0 5%;
-  width: 90%;
-  height: 85%;
+  margin: 7% 0 0 13%;
+  width: 74%;
+  height: 75%;
   background-color: rgb(250, 247, 233);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  border: 2px #eee;
+  box-shadow: 0 0 5px 5px black;
+  align-content: center;
+  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 #LeftSide {

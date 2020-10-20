@@ -63,11 +63,20 @@ class ProjectList extends Component {
     return(
       <div id="ProjectListContainer">
         {enlargedProject}
+        <div  id="LeftSide"> 
+          <div id="AboutMe">
+
+          </div>
+        </div>
+        <div id="RightSideList">
         {this.state.projects.map(project => {
-          return <div className="Card" key={project.title} onClick={() => this.showProject(project)}>
+          return (
+            <div className="Card" key={project.title} onClick={() => this.showProject(project)}>
               <img src={project.background} alt="card_bg"></img>
-            </div>
+            </div> )
         })}
+        <div style={{paddingBottom: '4%'}}></div>
+        </div>
       </div>
     )
   }
