@@ -21,6 +21,8 @@
   box-sizing: border-box;
   border-radius: 6px;
   cursor: pointer;
+  -webkit-animation: roll-in-blurred-right 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  animation: roll-in-blurred-right 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 #AboutMe {
@@ -34,6 +36,8 @@
   align-content: center;
   box-sizing: border-box;
   border-radius: 6px;
+  -webkit-animation: roll-in-blurred-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  animation: roll-in-blurred-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 .Card img {
@@ -56,3 +60,71 @@
   width: 48%;
   height: 98%;
 }
+
+@-webkit-keyframes roll-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes roll-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) rotate(720deg);
+    transform: translateX(1000px) rotate(720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes roll-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) rotate(720deg);
+    transform: translateX(1000px) rotate(720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
