@@ -1,8 +1,44 @@
 #ProjectViewContainer {
-  z-index: 10;
+  z-index: 105;
   position: fixed;
-  margin: 5% 0 0 5%;
+  margin: 4% 0 0 5%;
   width: 90%;
   height: 85%;
-  background-color: white;
+  background-color: rgb(250, 247, 233);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#LeftSide {
+  margin: 1%;
+  float: left;
+  width: 48%;
+  height: 98%;
+}
+
+#RightSide {
+  margin: 1%;
+  float: left;
+  width: 48%;
+  height: 98%;
+}
+
+#Title {
+
+}
+
+#Github {
+
+}
+
+#Website {
+
+}
+
+#Gif {
+  
+}
+
+#Description {
+
 }

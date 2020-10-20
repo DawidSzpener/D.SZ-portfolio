@@ -6,13 +6,15 @@ class ProjectView extends Component {
   render() {
     return(
       <div id="ProjectViewContainer">
-        <div>
-          <div>{this.props.title}</div>
-          <div>{this.props.github}</div>
-          <div>{this.props.website}</div>
-          <div>{this.props.description}</div>
+        <div id="LeftSide">
+          <div id='Title'>{this.props.title}</div>
+          <div id='Github'>{this.props.github}</div>
+          <div id='Website'>{this.props.website}</div>
+          <div id='Description'>{this.props.description}</div>
         </div>
-        <div>{this.props.gif}</div>
+        <div id="RightSide">
+          <div id='Gif'>{this.props.gif}</div>
+        </div>
       </div>
     )
   }

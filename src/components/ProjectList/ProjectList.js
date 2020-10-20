@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../ProjectList/ProjectList.css';
 import Bg1 from '../../assets/images/bg1.jpg'
 import ProjectView from '../ProjectView/PrjoectView'
+import Backdrop from '../UI/backdrop/Backdrop'
 
 class ProjectList extends Component {
   state = {
@@ -43,16 +44,20 @@ class ProjectList extends Component {
   render() {
     let enlargedProject = null
     if (this.state.enlarge) {
-      enlargedProject = <ProjectView
-      className="Card"
-      onClick={() => this.showProject()}
-      title={this.state.enlargedProject.title}
-      github={this.state.enlargedProject.github}
-      website={this.state.enlargedProject.website}
-      description={this.state.enlargedProject.description}
-      gif={this.state.enlargedProject.gif}
-      background={this.state.enlargedProject.background}
-      /> 
+      enlargedProject = 
+      <div>
+        <Backdrop clicked={() => this.hideProject()} show={this.state.enlarge}/>
+        <ProjectView
+        className="Card"
+        onClick={() => this.showProject()}
+        title={this.state.enlargedProject.title}
+        github={this.state.enlargedProject.github}
+        website={this.state.enlargedProject.website}
+        description={this.state.enlargedProject.description}
+        gif={this.state.enlargedProject.gif}
+        background={this.state.enlargedProject.background}
+        /> 
+      </div>
     }
 
     return(
