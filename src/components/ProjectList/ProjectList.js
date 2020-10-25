@@ -3,11 +3,12 @@ import '../ProjectList/ProjectList.css';
 import Bg1 from '../../assets/images/bg1.jpg'
 import ProjectView from '../ProjectView/PrjoectView'
 import Backdrop from '../UI/Backdrop/Backdrop'
+import Card from '../UI/Card/Card'
 
 class ProjectList extends Component {
   state = {
     projects: [
-      {title: "CELLULAR AUTOMATON", background: Bg1, gif: "gif", github: 'www.google.com', website: 'www.google.com', description: "to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 "},
+      {title: "CELLULAR AUTOMATON", background: Bg1, gif: "gif", github: 'https://www.google.com', website: 'https://www.google.com', description: "to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 "},
       {title: "RICIPICI", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 2"},
       {title: "SIMPLE ASSET TRACKER", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 3"},
       {title: "BURGER BUILDER", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 4"},
@@ -72,10 +73,11 @@ class ProjectList extends Component {
         <div id="RightSideList">
         {this.state.projects.map(project => {
           return (
-            <div
-            className="Card" key={project.title} onClick={() => this.showProject(project)}>
-              <img src={project.background} alt="card_bg"></img>
-            </div> )
+            <Card
+              title={project.title}
+              background={project.background}
+              clicked={() => this.showProject(project)} />
+            )
         })}
         <div style={{paddingBottom: '4%'}}></div>
         </div>
