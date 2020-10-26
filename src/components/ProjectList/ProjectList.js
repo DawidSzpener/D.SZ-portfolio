@@ -4,6 +4,7 @@ import Bg1 from '../../assets/images/bg1.jpg'
 import ProjectView from '../ProjectView/PrjoectView'
 import Backdrop from '../UI/Backdrop/Backdrop'
 import Card from '../UI/Card/Card'
+import { AnimateSharedLayout } from "framer-motion"
 
 class ProjectList extends Component {
   state = {
