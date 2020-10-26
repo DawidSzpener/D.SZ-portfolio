@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover; 
   border: 2px #eee;
-  box-shadow: 0 0 5px 5px black;
+  box-shadow: 0 0 2px 4px black;
   align-content: center;
   box-sizing: border-box;
   border-radius: 6px;
@@ -29,21 +29,22 @@
 }
 
 #Title {
-  margin: 25% 0 0 0;
+  margin: 15% 0 0 0;
   letter-spacing: 8px;
   font-family: 'Wallpoet', cursive;
   text-align: center;
   font-weight: 1000;
-  font-size: 2.4vw;
+  font-size: 3.4vw;
 }
 
 #Description {
-  text-align: left;
+  margin: 5% 0 5% 0;
+  text-align: center;
   font-family: 'Wallpoet', cursive;
   letter-spacing: 0px;
   height: 30%;
   padding: 5%;
-  font-size: 1.2vw;
+  font-size: 1.7vw;
 }
 
 #Github {
@@ -59,7 +60,15 @@
 }
 
 #Gif {
-  margin: 30% 0 0 0;
-  height: 50%;
+  margin: 5% 0 0 0;
+  height: 90%;
+  width: 90%; 
+  display: inline-block;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+#Gif img {
+  height: 100%;
   width: 100%; 
 }

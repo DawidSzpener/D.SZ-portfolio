@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import '../ProjectList/ProjectList.css';
 import Bg1 from '../../assets/images/bg1.jpg'
+import CSS from '../../assets/images/Cellular-Automaton.gif'
 import ProjectView from '../ProjectView/PrjoectView'
 import Backdrop from '../UI/Backdrop/Backdrop'
 import Card from '../UI/Card/Card'
-import { AnimateSharedLayout } from "framer-motion"
 
 class ProjectList extends Component {
   state = {
     projects: [
-      {title: "CELLULAR AUTOMATON", background: Bg1, gif: "gif", github: 'https://www.google.com', website: 'https://www.google.com', description: "to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 to jest project 1 "},
+      {title: "CELLULAR AUTOMATON", background: CSS, gif: CSS, github: 'https://github.com/Hyan18/the-css', website: 'https://the-css.herokuapp.com/', description: "Cellular Automata - single player game, evolution dependant on initial state. Using Conway's game of life you can solve puzzles on a single page web app"},
       {title: "RICIPICI", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 2"},
       {title: "SIMPLE ASSET TRACKER", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 3"},
       {title: "BURGER BUILDER", background: Bg1, gif: "gif", github: "url", website: "url", description: "to jest project 4"},
@@ -51,14 +51,14 @@ class ProjectList extends Component {
       <div>
         <Backdrop clicked={() => this.hideProject()} show={this.state.enlarge}/>
         <ProjectView
-        className="Card"
-        onClick={() => this.showProject()}
-        title={this.state.enlargedProject.title}
-        github={this.state.enlargedProject.github}
-        website={this.state.enlargedProject.website}
-        description={this.state.enlargedProject.description}
-        gif={this.state.enlargedProject.gif}
-        background={this.state.enlargedProject.background}
+          className="Card"
+          onClick={() => this.showProject()}
+          title={this.state.enlargedProject.title}
+          github={this.state.enlargedProject.github}
+          website={this.state.enlargedProject.website}
+          description={this.state.enlargedProject.description}
+          gif={this.state.enlargedProject.gif}
+          background={this.state.enlargedProject.background}
         /> 
       </div>
     }
@@ -75,6 +75,7 @@ class ProjectList extends Component {
         {this.state.projects.map(project => {
           return (
             <Card
+              key={project.title}
               title={project.title}
               background={project.background}
               clicked={() => this.showProject(project)} />

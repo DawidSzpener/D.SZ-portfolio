@@ -18,7 +18,7 @@ class ProjectView extends Component {
           <div id='Website'><a href={this.props.website}><Button>Website</Button></a></div>
         </div>
         <div id="RightSide">
-          <div id='Gif'>{this.props.gif}</div>
+          <div id='Gif'><img src={this.props.gif} alt="gif"></img></div>
         </div>
       </div>
     )
