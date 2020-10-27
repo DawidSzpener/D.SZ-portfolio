@@ -1,8 +1,8 @@
 #ProjectViewContainer {
   z-index: 105;
   position: fixed;
-  margin: 7% 0 0 15%;
-  width: 70%;
+  margin: 7% 0 0 5%;
+  width: 90%;
   height: 72%;
   background-color: rgb(250, 247, 233);
   background-repeat: no-repeat;
@@ -30,19 +30,21 @@
 
 #Title {
   margin: 15% 0 0 0;
-  letter-spacing: 8px;
+  letter-spacing: 0px;
   font-family: 'Wallpoet', cursive;
   text-align: center;
   font-weight: 1000;
-  font-size: 3.4vw;
+  font-size: 3.8vw;
 }
 
 #Description {
-  margin: 5% 0 5% 0;
+  text-transform: uppercase;
+  margin: 5% 0 0 0;
   text-align: center;
-  font-family: 'Wallpoet', cursive;
+  font-family: 'Piedra', cursive;
+  font-weight: 100;
   letter-spacing: 0px;
-  height: 30%;
+  height: 20%;
   padding: 5%;
   font-size: 1.7vw;
 }
@@ -60,11 +62,14 @@
 }
 
 #Gif {
-  margin: 5% 0 0 0;
+  margin: 3% 0 0 4%;
   height: 90%;
   width: 90%; 
   display: inline-block;
   align-content: center;
+  border: 2px #eee;
+  box-shadow: 0 0 2px 4px black;
+  border-radius: 6px;
   box-sizing: border-box;
 }
 
