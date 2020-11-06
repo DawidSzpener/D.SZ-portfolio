@@ -23,17 +23,38 @@
   cursor: pointer;
 }
 
+h2 {
+  letter-spacing: 12px;
+  font-family: 'Wallpoet', cursive;
+  text-align: center;
+  font-weight: 600;
+  margin: -0.5% 1% 1% 1%;
+  float: left;
+  width: 48%;
+  height: auto;
+  font-size: 2vw;
+}
+
+h3 {
+  letter-spacing: 12px;
+  font-family: 'Wallpoet', cursive;
+  text-align: center;
+  font-weight: 600;
+  margin: -4.5% 1% 1% 1%;
+  float: left;
+  width: 100%;
+  height: auto;
+  font-size: 2vw;
+}
+
 #AboutMe {
   position: fixed;
   width: 49.5%;
   height: 90%;
-  border: 2px #eee;
-  box-shadow: 0 0 2px 4px black;
   padding: 5px;
   margin: 2% 0% 4% 0.5%;
   align-content: center;
   box-sizing: border-box;
-  border-radius: 6px;
 }
 
 .Card img {
@@ -44,6 +65,7 @@
 }
 
 #RightSideList {
+  padding-top: 1%;
   margin: 2% 1% 1% 1%;
   float: left;
   width: 48%;

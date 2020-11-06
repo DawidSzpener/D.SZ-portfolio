@@ -71,21 +71,22 @@ class ProjectList extends Component {
       <div id="ProjectListContainer">
         {enlargedProject}
         <div  id="LeftSide"> 
+          <h2 style={{position: 'fixed'}}>ABOUT ME</h2>
           <div id="AboutMe">
-            <h1 style={{marginBottom: "3%", marginTop: "3%"}}>ABOUT ME</h1>
             <AboutMe/>
           </div>
         </div>
         <div id="RightSideList">
-        {this.state.projects.map(project => {
-          return (
-            <Card
-              key={project.title}
-              title={project.title}
-              background={project.background}
-              clicked={() => this.showProject(project)} />
-            )
-        })}
+          <h3 style={{position: 'fixed'}}>PROJECTS</h3>
+          {this.state.projects.map(project => {
+            return (
+              <Card
+                key={project.title}
+                title={project.title}
+                background={project.background}
+                clicked={() => this.showProject(project)} />
+              )
+          })}
         <div style={{paddingBottom: '4%'}}></div>
         </div>
       </div>
