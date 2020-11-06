@@ -71,7 +71,6 @@ class ProjectList extends Component {
       <div id="ProjectListContainer">
         {enlargedProject}
         <div  id="LeftSide"> 
-          <h2 style={{position: 'fixed'}}>ABOUT ME</h2>
           <div id="AboutMe">
             <AboutMe/>
           </div>
