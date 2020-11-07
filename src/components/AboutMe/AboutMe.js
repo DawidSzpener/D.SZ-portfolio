@@ -23,24 +23,24 @@ const AboutMe = () => (
       <h4 style={{marginTop: "5%"}}>Hello! I'm Dawid.</h4>
     </div>
     <div className="AboutMeSlides">
-      <img id="img01" src={makers02} alt="obrazek"/>
-      <img id="img02" src={makers01} alt="obrazek"/>
-      <h4 style={{marginTop: "20%"}}>I learned coding in London</h4>
+      <img style={{marginTop: "5%"}} id="img01" src={makers02} alt="obrazek"/>
+      <img style={{marginTop: "2%"}} id="img02" src={makers01} alt="obrazek"/>
+      <h4 style={{marginTop: "22%"}}>I learned coding in London</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img03" src={fishing01} alt="obrazek"/>
       <img id="img04" src={fishing02} alt="obrazek"/>
-      <h4 style={{marginTop: "5%"}}>That's me</h4>
+      <h4 style={{marginTop: "6%"}}>That's me</h4>
     </div>
     <div className="AboutMeSlides">
-      <img id="img07" src={travel02} alt="obrazek"/>
-      <img id="img08" src={travel01} alt="obrazek"/>
-      <h4 style={{marginTop: "6%"}}>I like to travel</h4>
+      <img style={{marginTop: "3%"}}  id="img07" src={travel02} alt="obrazek"/>
+      <img style={{marginTop: "8%"}} id="img08" src={travel01} alt="obrazek"/>
+      <h4 style={{marginTop: "1%"}}>I like to travel</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img05" src={cooking01} alt="obrazek"/>
-      <img id="img06" src={cooking02} alt="obrazek"/>
-      <h4 style={{marginTop: "0%"}}>And cook</h4>
+      <img style={{marginTop: "10%"}} id="img06" src={cooking02} alt="obrazek"/>
+      <h4 style={{marginTop: "8%"}}>And cook</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img09" src={strzal01} alt="obrazek"/>

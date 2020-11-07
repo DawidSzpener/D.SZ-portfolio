@@ -128,11 +128,15 @@ h4 {
     width: 96.5%;
     height: 38%;
     overflow: auto;    
+    -webkit-animation: slide-in-bottom 1.5 cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   #AboutMe {
     width: 100%;
     position: relative;
     padding: 1%;  
+    -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   .Card {
     height: 95%;

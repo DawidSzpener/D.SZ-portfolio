@@ -56,9 +56,9 @@
 }
 
 #img07 {
-  width: 45%;
+  width: 55%;
   height: auto;
-  margin-left: -17.5%;
+  margin-left: -27.5%;
 }
 
 #img08 {
@@ -92,10 +92,12 @@
     height: 100%;
   }
   #img07 {
-    margin-left: -37.5%;
+    width: 57%;
+    margin-left: -27.5%;
   }
   #img08 {
-    left: 40%;
+    width: 45%;
+    left: 46%;
   }
   #img05 {
     margin-left: -22.5%;
@@ -107,12 +109,12 @@
     left: 43%;
   }
   #img01 {
-    width: 70%;
-    margin-left: -17.5%;
+    width: 80%;
+    margin-left: -9.5%;
   }
   #img02 {
-    width: 47%;
+    width: 49%;
     left: 44%;
-    top: 43%;
+    top: 48%;
   }
 }
