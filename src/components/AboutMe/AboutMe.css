@@ -84,3 +84,34 @@
 .carousel-dots {
   margin-top: 0;
 }
+
+@media screen and (max-width: 700px) {
+  .AboutMeSlides {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+  }
+  #img07 {
+    margin-left: -37.5%;
+  }
+  #img08 {
+    left: 40%;
+  }
+  #img05 {
+    margin-left: -22.5%;
+  }
+  #img06 {
+    left: 40%;
+  }
+  #img10 {
+    left: 43%;
+  }
+  #img01 {
+    width: 70%;
+    margin-left: -17.5%;
+  }
+  #img02 {
+    width: 57%;
+    left: 37%;
+  }
+}
