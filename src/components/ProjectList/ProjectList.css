@@ -98,9 +98,26 @@ h4 {
   height: 98%;
 }
 
+#Bottom {
+  padding-bottom: 6%;
+}
+
 @media screen and (max-width: 700px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    color: black;
+    background-color: black;
+  }
+  #Bottom {
+    padding-bottom: 0;
+  }
   #LeftSideList {
-    width: 98%;
+    width: 99%;
     height: 35%;
     margin: 0 0 0 0;
     padding: 0;
@@ -110,7 +127,7 @@ h4 {
     padding: 0;
     width: 96.5%;
     height: 38%;
-    overflow-x: scroll;
+    overflow: auto;    
   }
   #AboutMe {
     width: 100%;

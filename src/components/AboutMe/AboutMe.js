@@ -14,6 +14,7 @@ import strzal02 from '../../assets/images/strzal02.jpg'
 import ja01 from '../../assets/images/ja01.jpg'
 import ja02 from '../../assets/images/ja02.jpg'
 
+
 const AboutMe = () => (
   <Slider dots={true} swipe={true} autoplay={true} autoplaySpeed={5000} arrows={false}>
     <div className="AboutMeSlides">
@@ -24,27 +25,27 @@ const AboutMe = () => (
     <div className="AboutMeSlides">
       <img id="img01" src={makers01} alt="obrazek"/>
       <img id="img02" src={makers02} alt="obrazek"/>
-      <h4 style={{marginTop: "20%"}}>I have studied coding in London.</h4>
-    </div>
-    <div className="AboutMeSlides">
-      <img id="img05" src={cooking01} alt="obrazek"/>
-      <img id="img06" src={cooking02} alt="obrazek"/>
-      <h4 style={{marginTop: "0%"}}>I cook in my free time.</h4>
+      <h4 style={{marginTop: "20%"}}>I learned coding in London</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img03" src={fishing01} alt="obrazek"/>
       <img id="img04" src={fishing02} alt="obrazek"/>
-      <h4 style={{marginTop: "5%"}}>Or fish.</h4>
+      <h4 style={{marginTop: "5%"}}>That's me</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img07" src={travel02} alt="obrazek"/>
       <img id="img08" src={travel01} alt="obrazek"/>
-      <h4 style={{marginTop: "6%"}}>Sometimes travel.</h4>
+      <h4 style={{marginTop: "6%"}}>I like to travel</h4>
+    </div>
+    <div className="AboutMeSlides">
+      <img id="img05" src={cooking01} alt="obrazek"/>
+      <img id="img06" src={cooking02} alt="obrazek"/>
+      <h4 style={{marginTop: "0%"}}>And cook</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img09" src={strzal01} alt="obrazek"/>
       <img id="img10" src={strzal02} alt="obrazek"/>
-      <h4 style={{marginTop: "4%"}}>And shoot.</h4>
+      <h4 style={{marginTop: "4%"}}>Enjoy my projects!</h4>
     </div>
   </Slider>
 );

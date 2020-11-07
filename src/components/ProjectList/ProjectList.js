@@ -86,7 +86,7 @@ class ProjectList extends Component {
                 clicked={() => this.showProject(project)} />
               )
           })}
-        <div style={{paddingBottom: '4%'}}></div>
+        <div id='Bottom'></div>
         </div>
       </div>
     )
