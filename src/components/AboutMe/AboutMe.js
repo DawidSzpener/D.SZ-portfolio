@@ -19,7 +19,7 @@ const AboutMe = () => (
     <div className="AboutMeSlides">
       <img id="img03" src={ja01} alt="obrazek"/>
       <img id="img04" src={ja02} alt="obrazek"/>
-      <h4 style={{marginTop: "5%"}}>Hello!   I'm Dawid.</h4>
+      <h4 style={{marginTop: "5%"}}>Hello! I'm Dawid.</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img01" src={makers01} alt="obrazek"/>

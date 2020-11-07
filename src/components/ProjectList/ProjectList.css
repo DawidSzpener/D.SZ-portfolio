@@ -49,6 +49,19 @@ h3 {
   font-size: 2vw;
 }
 
+h4 {
+  text-transform: uppercase;
+  margin: 5% 0 0 0;
+  text-align: center;
+  font-family: 'Piedra', cursive;
+  font-weight: 100;
+  letter-spacing: 3px;
+  height: 20%;
+  padding: 5% 5% 2% 5%;
+  font-size: 1.8vw;
+  margin-top: 17%;
+}
+
 #AboutMe {
   position: fixed;
   width: 49.5%;
@@ -57,8 +70,8 @@ h3 {
   margin: 2% 0% 4% 0.5%;
   align-content: center;
   box-sizing: border-box;
-  -webkit-animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .Card img {
@@ -74,8 +87,8 @@ h3 {
   float: left;
   width: 48%;
   height: 98%;
-  -webkit-animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-top 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #LeftSideList {
@@ -83,6 +96,36 @@ h3 {
   float: left;
   width: 48%;
   height: 98%;
+}
+
+@media screen and (max-width: 700px) {
+  #LeftSideList {
+    width: 98%;
+    height: 35%;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+  #RightSideList {
+    margin: 45% 0 0 0;
+    padding: 0;
+    width: 96.5%;
+    height: 30%;
+    overflow-x: scroll;
+  }
+  #AboutMe {
+    width: 100%;
+    position: relative;
+  }
+  .Card {
+    height: 94%;
+    margin: 2% 0% 5% 23;
+  }
+  .carousel-dots{
+    opacity: 0;
+  }
+  h4 {
+    font-size: 4vw;
+  }
 }
 
 @-webkit-keyframes slide-in-top {

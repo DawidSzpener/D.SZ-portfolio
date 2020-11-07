@@ -70,7 +70,7 @@ class ProjectList extends Component {
     return(
       <div id="ProjectListContainer">
         {enlargedProject}
-        <div  id="LeftSide"> 
+        <div  id="LeftSideList"> 
           <div id="AboutMe">
             <AboutMe/>
           </div>
