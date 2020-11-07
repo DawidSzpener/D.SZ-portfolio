@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f026b468.chunk.css",
+    "main.js": "/static/js/main.113fc637.chunk.js",
+    "main.js.map": "/static/js/main.113fc637.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0e998ba7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0e998ba7.js.map",
+    "static/css/2.05a0ae32.chunk.css": "/static/css/2.05a0ae32.chunk.css",
+    "static/js/2.f87195c6.chunk.js": "/static/js/2.f87195c6.chunk.js",
+    "static/js/2.f87195c6.chunk.js.map": "/static/js/2.f87195c6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f63e403757da475f87c58bafa815d5f3.js": "/precache-manifest.f63e403757da475f87c58bafa815d5f3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.05a0ae32.chunk.css.map": "/static/css/2.05a0ae32.chunk.css.map",
+    "static/css/main.f026b468.chunk.css.map": "/static/css/main.f026b468.chunk.css.map",
+    "static/js/2.f87195c6.chunk.js.LICENSE.txt": "/static/js/2.f87195c6.chunk.js.LICENSE.txt",
+    "static/media/Cellular-Automaton.gif": "/static/media/Cellular-Automaton.6f3cc731.gif",
+    "static/media/acebook.gif": "/static/media/acebook.fa984cef.gif",
+    "static/media/burger.gif": "/static/media/burger.66efe228.gif",
+    "static/media/cooking01.jpg": "/static/media/cooking01.04a8c60f.jpg",
+    "static/media/cooking02.jpg": "/static/media/cooking02.4d38d100.jpg",
+    "static/media/Homepage.css": "/static/media/sayanface.af400442.png",
+    "static/media/fishing01.jpeg": "/static/media/fishing01.996f3f2e.jpeg",
+    "static/media/fishing02.jpeg": "/static/media/fishing02.48ad6784.jpeg",
+    "static/media/ja01.jpg": "/static/media/ja01.1bfbc1ca.jpg",
+    "static/media/ja02.jpg": "/static/media/ja02.bd615c25.jpg",
+    "static/media/makers02.jpg": "/static/media/makers02.fbaf6bb2.jpg",
+    "static/media/makers03.jpg": "/static/media/makers03.2de5ad9b.jpg",
+    "static/media/ricipici.gif": "/static/media/ricipici.2f2ffc68.gif",
+    "static/media/sas.gif": "/static/media/sas.e459f99d.gif",
+    "static/media/strzal01.jpg": "/static/media/strzal01.d09a2670.jpg",
+    "static/media/strzal02.jpg": "/static/media/strzal02.ea2767ab.jpg",
+    "static/media/travel01.png": "/static/media/travel01.af8b58f7.png",
+    "static/media/travel02.jpg": "/static/media/travel02.afee3e9e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e998ba7.js",
+    "static/css/2.05a0ae32.chunk.css",
+    "static/js/2.f87195c6.chunk.js",
+    "static/css/main.f026b468.chunk.css",
+    "static/js/main.113fc637.chunk.js"
+  ]
+}
