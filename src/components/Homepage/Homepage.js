@@ -17,13 +17,13 @@ class Homepage extends Component {
   }
 
   render() {
-    setTimeout(this.forward, 6000)
+    // setTimeout(this.forward, 6000)
     return (
       <div id='HomepageBg'>
-        <h1 style={{fontSize: "8vw", padding: "0 25% 0 25%", margin: "5% 0 0 0"}}>
+        <h1 id='Imie'>
           <SplitText copy="DAWID SZPENER"/>
         </h1>
-        <h1 style={{fontSize: "3.5vw", padding: "0 10% 0 10%", margin: "5% 0 0 0"}}>
+        <h1 id='Portfolio'>
           <PortfolioHighlight copy="PORTFOLIO"/>
         </h1>
         <div id="HomepageFace" onClick={() => this.redirect()}>

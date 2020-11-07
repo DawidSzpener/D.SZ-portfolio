@@ -10,10 +10,10 @@
   background-color: rgb(250, 247, 233);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: fade-out 1s ease-out both;
+  /* -webkit-animation: fade-out 1s ease-out both;
   animation: fade-out 1s ease-out both;
   animation-delay: 5s;
-  -webkit-animation-delay: 5s;
+  -webkit-animation-delay: 5s; */
 }
 
 #HomepageFace {
@@ -48,6 +48,94 @@ h1 span span {
   bottom: -1em;
   opacity: 0;
   word-wrap: normal;
+}
+
+#Imie {
+  font-size: 8vw;
+  padding: 0 25% 0 25%;
+  margin: 5% 0 0 0;
+}
+
+#Portfolio {
+  font-size: 3.5vw;
+  padding: 0 10% 0 10%;
+  margin: 5% 0 0 0;
+}
+
+@media screen and (max-width: 450px) {
+
+  #Imie {
+    font-size: 14vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  #Portfolio {
+    font-size: 8vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  #HomepageFace {
+    margin: -3% 0 0 3%;
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) and (min-width: 451px) {
+
+  #Imie {
+    font-size: 13vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  #Portfolio {
+    font-size: 8vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  #HomepageFace {
+    margin: -3% 2% 0 0;
+    width: 40%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 651px) {
+
+  #Imie {
+    font-size: 9vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  #Portfolio {
+    font-size: 5vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  #HomepageFace {
+    margin: -7% 2% 0 0;
+    width: 36%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+
+  #Imie {
+    font-size: 7vw;
+    padding: 0 0 0 1%;
+    width: 100%;
+  }
+  #Portfolio {
+    font-size: 4vw;
+    padding: 0 10% 10% 12%;
+    margin: 5% 0 0 0;
+  }
+  #HomepageFace {
+    margin: -7% 2% 0 0;
+    width: 30%;
+    height: 70%;
+  }
 }
 
 @keyframes move-text-color {
@@ -91,12 +179,6 @@ h1 span span {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    transform: scale(0.75);
   }
 }
 
