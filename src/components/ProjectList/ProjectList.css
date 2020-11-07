@@ -106,25 +106,24 @@ h4 {
     padding: 0;
   }
   #RightSideList {
-    margin: 45% 0 0 0;
+    margin: 42% 0 0 0;
     padding: 0;
     width: 96.5%;
-    height: 30%;
+    height: 38%;
     overflow-x: scroll;
   }
   #AboutMe {
     width: 100%;
     position: relative;
+    padding: 1%;  
   }
   .Card {
-    height: 94%;
+    height: 95%;
     margin: 2% 0% 5% 23;
-  }
-  .carousel-dots{
-    opacity: 0;
   }
   h4 {
     font-size: 4vw;
+    padding: 5% 0 2% 0;
   }
 }
 

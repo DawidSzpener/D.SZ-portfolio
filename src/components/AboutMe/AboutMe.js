@@ -15,7 +15,7 @@ import ja01 from '../../assets/images/ja01.jpg'
 import ja02 from '../../assets/images/ja02.jpg'
 
 const AboutMe = () => (
-  <Slider dots swipe={true} autoplay={true} autoplaySpeed={5000} arrows={false}>
+  <Slider dots={true} swipe={true} autoplay={true} autoplaySpeed={5000} arrows={false}>
     <div className="AboutMeSlides">
       <img id="img03" src={ja01} alt="obrazek"/>
       <img id="img04" src={ja02} alt="obrazek"/>
@@ -39,7 +39,7 @@ const AboutMe = () => (
     <div className="AboutMeSlides">
       <img id="img07" src={travel02} alt="obrazek"/>
       <img id="img08" src={travel01} alt="obrazek"/>
-      <h4 style={{marginTop: "6%"}}>Sometimes I travel.</h4>
+      <h4 style={{marginTop: "6%"}}>Sometimes travel.</h4>
     </div>
     <div className="AboutMeSlides">
       <img id="img09" src={strzal01} alt="obrazek"/>
