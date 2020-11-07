@@ -10,10 +10,10 @@
   background-color: rgb(250, 247, 233);
   background-repeat: no-repeat;
   background-size: cover;
-  /* -webkit-animation: fade-out 1s ease-out both;
+  -webkit-animation: fade-out 1s ease-out both;
   animation: fade-out 1s ease-out both;
   animation-delay: 5s;
-  -webkit-animation-delay: 5s; */
+  -webkit-animation-delay: 5s;
 }
 
 #HomepageFace {
@@ -63,7 +63,6 @@ h1 span span {
 }
 
 @media screen and (max-width: 450px) {
-
   #Imie {
     font-size: 14vw;
     padding: 0 0 0 1%;
@@ -82,7 +81,6 @@ h1 span span {
 }
 
 @media screen and (max-width: 650px) and (min-width: 451px) {
-
   #Imie {
     font-size: 13vw;
     padding: 0 0 0 1%;
@@ -101,7 +99,6 @@ h1 span span {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 651px) {
-
   #Imie {
     font-size: 9vw;
     padding: 0 0 0 1%;
@@ -120,7 +117,6 @@ h1 span span {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 801px) {
-
   #Imie {
     font-size: 7vw;
     padding: 0 0 0 1%;

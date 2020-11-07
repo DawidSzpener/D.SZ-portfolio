@@ -17,7 +17,7 @@ class Homepage extends Component {
   }
 
   render() {
-    // setTimeout(this.forward, 6000)
+    setTimeout(this.forward, 6000)
     return (
       <div id='HomepageBg'>
         <h1 id='Imie'>
