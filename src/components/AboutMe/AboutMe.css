@@ -24,9 +24,9 @@
 
 #img02 {
   position: absolute;
-  width: 67%;
-  left: 30%;
-  top: 37%;
+  width: 47%;
+  left: 44%;
+  top: 47%;
 }
 
 #img03 {
@@ -111,7 +111,8 @@
     margin-left: -17.5%;
   }
   #img02 {
-    width: 57%;
-    left: 37%;
+    width: 47%;
+    left: 44%;
+    top: 43%;
   }
 }

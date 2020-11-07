@@ -23,8 +23,8 @@ const AboutMe = () => (
       <h4 style={{marginTop: "5%"}}>Hello! I'm Dawid.</h4>
     </div>
     <div className="AboutMeSlides">
-      <img id="img01" src={makers01} alt="obrazek"/>
-      <img id="img02" src={makers02} alt="obrazek"/>
+      <img id="img01" src={makers02} alt="obrazek"/>
+      <img id="img02" src={makers01} alt="obrazek"/>
       <h4 style={{marginTop: "20%"}}>I learned coding in London</h4>
     </div>
     <div className="AboutMeSlides">
