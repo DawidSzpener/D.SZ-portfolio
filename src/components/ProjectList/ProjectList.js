@@ -5,10 +5,10 @@ import Burger from '../../assets/images/burger.gif'
 import Ricipici from '../../assets/images/ricipici.gif'
 import Acebook from '../../assets/images/acebook.gif'
 import SAS from '../../assets/images/sas.gif'
-import ProjectView from '../ProjectView/PrjoectView'
-import Backdrop from '../UI/Backdrop/Backdrop'
-import Card from '../UI/Card/Card'
-import AboutMe from '../AboutMe/AboutMe'
+import ProjectView from '../ProjectView/PrjoectView.js'
+import Backdrop from '../UI/Backdrop/Backdrop.js'
+import Card from '../UI/Card/Card.js'
+import AboutMe from '../AboutMe/AboutMe.js'
 
 class ProjectList extends Component {
   state = {
