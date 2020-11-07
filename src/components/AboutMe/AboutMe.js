@@ -17,7 +17,7 @@ import ja02 from '../../assets/images/ja02.jpg'
 
 
 const AboutMe = () => (
-  <Slider dots swipe={true} autoplay={false} autoplaySpeed={5000} arrows={false}>
+  <Slider dots swipe={true} autoplay={true} autoplaySpeed={5000} arrows={false}>
     <div className="AboutMeSlides">
       <img id="img03" src={ja01} alt="obrazek"/>
       <img id="img04" src={ja02} alt="obrazek"/>

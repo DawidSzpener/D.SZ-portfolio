@@ -10,6 +10,10 @@
   background-color: rgb(250, 247, 233);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-animation: fade-out 1s ease-out both;
+  animation: fade-out 1s ease-out both;
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
 }
 
 #HomepageFace {
@@ -21,8 +25,8 @@
   background-image: url('../../assets/images/face.png');
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 2.7s;
   -webkit-animation-delay: 2.7s;
 }
@@ -65,34 +69,50 @@ h1 span span {
   }
 }
 
-@-webkit-keyframes rotate-in-center {
+@-webkit-keyframes slide-in-bck-center {
   0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
-@keyframes rotate-in-center {
+@keyframes slide-in-bck-center {
   0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
-
 
 @media screen and (max-width: 500px) {
   body {
     transform: scale(0.75);
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
