@@ -1,0 +1,40 @@
+.ArrowLeft {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  z-index: 50;
+  background: transparent;
+  border-top: 0px transparent;
+  border-left: 0px transparent;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.ArrowRight {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  z-index: 50;
+  user-select: none;
+  background: transparent;
+  border-top: 0px transparent;
+  border-left: 0px transparent;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.ArrowRight:focus {
+  outline: none;
+}
+.ArrowLeft:focus {
+  outline: none;
+}
+
