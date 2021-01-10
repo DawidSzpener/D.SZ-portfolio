@@ -27,21 +27,21 @@ const AboutMe = () => (
     arrows={true} 
     prevArrow={<Arrow direction="Left"/>}
     nextArrow={<Arrow direction="Right"/>}>
-      
+
     <div className="AboutMeSlides">
       <img id="img03" src={ja01} alt="obrazek"/>
       <img id="img04" src={ja02} alt="obrazek"/>
       <h4 style={{marginTop: "5%"}}>Hello! I'm Dawid.</h4>
     </div>
     <div className="AboutMeSlides">
-      <img style={{marginTop: "5%"}} id="img01" src={makers02} alt="obrazek"/>
-      <img style={{marginTop: "2%"}} id="img02" src={makers01} alt="obrazek"/>
-      <h4 style={{marginTop: "22%"}}>I learned coding in London</h4>
-    </div>
-    <div className="AboutMeSlides">
       <img id="img03" src={fishing01} alt="obrazek"/>
       <img id="img04" src={fishing02} alt="obrazek"/>
       <h4 style={{marginTop: "6%"}}>That's me</h4>
+    </div>
+    <div className="AboutMeSlides">
+      <img style={{marginTop: "5%"}} id="img01" src={makers02} alt="obrazek"/>
+      <img style={{marginTop: "2%"}} id="img02" src={makers01} alt="obrazek"/>
+      <h4 style={{marginTop: "22%"}}>I learned coding in London</h4>
     </div>
     <div className="AboutMeSlides">
       <img style={{marginTop: "3%"}}  id="img07" src={travel02} alt="obrazek"/>

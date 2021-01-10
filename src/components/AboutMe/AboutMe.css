@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+.AboutMeSlides:focus {
+  outline: none;
+}
+
 .AboutMeSlides img {
   margin: 1% 0 0 0;
   width: 90%;
