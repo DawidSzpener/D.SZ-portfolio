@@ -1,6 +1,8 @@
 import React from 'react';
+
 import Slider from 'infinite-react-carousel';
 import './AboutMe.css'
+
 import makers01 from '../../assets/images/makers02.jpg'
 import makers02 from '../../assets/images/makers03.jpg'
 import fishing01 from '../../assets/images/fishing01.jpeg'
@@ -14,9 +16,8 @@ import strzal02 from '../../assets/images/strzal02.jpg'
 import ja01 from '../../assets/images/ja01.jpg'
 import ja02 from '../../assets/images/ja02.jpg'
 
-
 const AboutMe = () => (
-  <Slider dots={true} swipe={true} autoplay={true} autoplaySpeed={5000} arrows={false}>
+  <Slider dots={true} swipe={true} autoplay={false} autoplaySpeed={5000} arrows={true}>
     <div className="AboutMeSlides">
       <img id="img03" src={ja01} alt="obrazek"/>
       <img id="img04" src={ja02} alt="obrazek"/>
