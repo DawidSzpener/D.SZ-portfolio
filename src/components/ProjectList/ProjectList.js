@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import '../ProjectList/ProjectList.css';
+
 import CSS from '../../assets/images/Cellular-Automaton.gif'
 import Burger from '../../assets/images/burger.gif'
 import Ricipici from '../../assets/images/ricipici.gif'
 import Acebook from '../../assets/images/acebook.gif'
 import SAS from '../../assets/images/sas.gif'
+
+import '../ProjectList/ProjectList.scss';
+
 import ProjectView from '../ProjectView/PrjoectView.js'
 import Backdrop from '../UI/Backdrop/Backdrop.js'
 import Card from '../UI/Card/Card.js'
@@ -68,14 +71,14 @@ class ProjectList extends Component {
     }
 
     return(
-      <div id="ProjectListContainer">
+      <div className="ProjectList">
         {enlargedProject}
-        <div  id="LeftSideList"> 
-          <div id="AboutMe">
+        <div  className="ProjectList__LeftSide"> 
+          <div className="ProjectList__LeftSide__AboutMe">
             <AboutMe/>
           </div>
         </div>
-        <div id="RightSideList">
+        <div className="ProjectList__RightSide">
           <h3 style={{position: 'fixed'}}>PROJECTS</h3>
           {this.state.projects.map(project => {
             return (
@@ -86,7 +89,7 @@ class ProjectList extends Component {
                 clicked={() => this.showProject(project)} />
               )
           })}
-        <div id='Bottom'></div>
+        <div className='Bottom'></div>
         </div>
       </div>
     )
