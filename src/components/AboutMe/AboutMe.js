@@ -2,7 +2,7 @@ import React from 'react';
 
 import Slider from 'infinite-react-carousel';
 
-import './AboutMe.css'
+import './AboutMe.scss'
 import Arrow from '../Arrow/Arrow'
 
 import makers01 from '../../assets/images/makers02.jpg'

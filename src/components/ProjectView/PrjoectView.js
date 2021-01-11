@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './ProjectView.css'
+
+import './ProjectView.scss'
 import Button from '../UI/Button/Button'
 
 class ProjectView extends Component {
@@ -10,15 +11,15 @@ class ProjectView extends Component {
 
   render() {
     return(
-      <div id="ProjectViewContainer">
-        <div id="LeftSide">
-          <div id='Title'>{this.props.title}</div>
-          <div id='Description'>{this.props.description}</div>
-          <div id='Github'><a href={this.props.github}><Button>Github</Button></a></div>
-          <div id='Website'><a href={this.props.website}><Button>Website</Button></a></div>
+      <div className="ProjectViewContainer">
+        <div className="LeftSide">
+          <div className='LeftSide__Title'>{this.props.title}</div>
+          <div className='LeftSide__Description'>{this.props.description}</div>
+          <div className='LeftSide__Github'><a href={this.props.github}><Button>Github</Button></a></div>
+          <div className='LeftSide__Website'><a href={this.props.website}><Button>Website</Button></a></div>
         </div>
-        <div id="RightSide">
-          <div id='Gif'><img src={this.props.gif} alt="gif"></img></div>
+        <div className="RightSide">
+          <div className='RightSide__Gif'><img src={this.props.gif} alt="gif"></img></div>
         </div>
       </div>
     )

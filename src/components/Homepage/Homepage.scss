@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-#HomepageBg {
+.Homepage {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -14,21 +14,33 @@
   animation: fade-out 1s ease-out both;
   animation-delay: 5s;
   -webkit-animation-delay: 5s;
-}
 
-#HomepageFace {
-  cursor: pointer;
-  margin: 2% 0 0 0%;
-  display: inline-block;
-  width: 16%;
-  height: 45%;
-  background-image: url('../../assets/images/face.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-delay: 2.7s;
-  -webkit-animation-delay: 2.7s;
+  &__face {
+    cursor: pointer;
+    margin: 2% 0 0 0%;
+    display: inline-block;
+    width: 16%;
+    height: 45%;
+    background-image: url('../../assets/images/face.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
+  }
+
+  &__name {
+    font-size: 8vw;
+    padding: 0 25% 0 25%;
+    margin: 2% 0 0 0;
+  }
+
+  &__title {
+    font-size: 3.5vw;
+    padding: 0 10% 0 10%;
+    margin: 5% 0 0 0;
+  }
 }
 
 h1 {
@@ -36,40 +48,28 @@ h1 {
   font-family: 'Wallpoet', cursive;
   text-align: center;
   font-weight: 600;
-}
 
-h1 span span {
-  position: relative;
-  animation: move-text-color 0.75s forwards;
-  bottom: -1em;
-  opacity: 0;
-  word-wrap: normal;
-}
-
-#Imie {
-  font-size: 8vw;
-  padding: 0 25% 0 25%;
-  margin: 2% 0 0 0;
-}
-
-#Portfolio {
-  font-size: 3.5vw;
-  padding: 0 10% 0 10%;
-  margin: 5% 0 0 0;
+  & span span {
+    position: relative;
+    animation: move-text-color 0.75s forwards;
+    bottom: -1em;
+    opacity: 0;
+    word-wrap: normal;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  #Imie {
+  .Homepage__name {
     font-size: 14vw;
     padding: 0 0 0 1%;
     width: 100%;
   }
-  #Portfolio {
+  .Homepage__title {
     font-size: 8vw;
     padding: 0 10% 10% 12%;
     margin: 5% 0 0 0;
   }
-  #HomepageFace {
+  .Homepage__face {
     margin: -3% 0 0 3%;
     width: 80%;
     height: 70%;
@@ -77,17 +77,17 @@ h1 span span {
 }
 
 @media screen and (max-width: 650px) and (min-width: 451px) {
-  #Imie {
+  .Homepage__name {
     font-size: 13vw;
     padding: 0 0 0 1%;
     width: 100%;
   }
-  #Portfolio {
+  .Homepage__title {
     font-size: 8vw;
     padding: 0 10% 10% 12%;
     margin: 5% 0 0 0;
   }
-  #HomepageFace {
+  .Homepage__face {
     margin: -3% 2% 0 0;
     width: 40%;
     height: 70%;
@@ -95,17 +95,17 @@ h1 span span {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 651px) {
-  #Imie {
+  .Homepage__name {
     font-size: 9vw;
     padding: 0 0 0 1%;
     width: 100%;
   }
-  #Portfolio {
+  .Homepage__title {
     font-size: 5vw;
     padding: 0 10% 10% 12%;
     margin: 5% 0 0 0;
   }
-  #HomepageFace {
+  .Homepage__face {
     margin: -7% 2% 0 0;
     width: 36%;
     height: 70%;
@@ -113,17 +113,17 @@ h1 span span {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 801px) {
-  #Imie {
+  .Homepage__name {
     font-size: 7vw;
     padding: 0 0 0 1%;
     width: 100%;
   }
-  #Portfolio {
+  .Homepage__title {
     font-size: 4vw;
     padding: 0 10% 10% 12%;
     margin: 5% 0 0 0;
   }
-  #HomepageFace {
+  .Homepage__face {
     margin: -7% 2% 0 0;
     width: 30%;
     height: 70%;

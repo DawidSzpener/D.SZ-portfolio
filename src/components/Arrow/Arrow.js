@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Arrow.css'
+import './Arrow.scss'
 
 const arrow = (props) => (
   <button

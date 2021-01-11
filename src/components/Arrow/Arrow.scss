@@ -13,6 +13,10 @@
   padding: 6px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .ArrowRight {
@@ -31,12 +35,8 @@
   padding: 6px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
 
-.ArrowRight:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
-.ArrowLeft:focus {
-  outline: none;
-}
-
