@@ -9,8 +9,6 @@ import SAS from '../../assets/images/sas.gif'
 import '../ProjectList/ProjectList.scss';
 
 import ProjectView from '../ProjectView/PrjoectView.js'
-import Backdrop from '../UI/Backdrop/Backdrop.js'
-import Card from '../UI/Card/Card.js'
 import AboutMe from '../AboutMe/AboutMe.js'
 
 class ProjectList extends Component {
@@ -23,14 +21,6 @@ class ProjectList extends Component {
       {title: "ACEBOOK", background: Acebook, gif: Acebook, github: "https://github.com/Hyan18/acebook-luckerberg", website: "https://acebook-luckerberg.herokuapp.com/", description: "Facebook clone, built during The Makers Academy course with a group of amazing people. Register, login and post or comment under you'r friends topics."}
     ],
     enlarge: false,
-    enlargedProject: {
-      title: '',
-      github: '',
-      website: '',
-      description: '',
-      background: '',
-      gif: ''
-    }
   }
 
   showProject = (project) => {
@@ -47,46 +37,28 @@ class ProjectList extends Component {
     })
   }
 
-  hideProject = () => {
-    this.setState({ enlarge: false })
-  }
-
   render() {
-    let enlargedProject = null
-    if (this.state.enlarge) {
-      enlargedProject = 
-      <div>
-        <Backdrop clicked={() => this.hideProject()} show={this.state.enlarge}/>
-        <ProjectView
-          className="Card"
-          onClick={() => this.showProject()}
-          title={this.state.enlargedProject.title}
-          github={this.state.enlargedProject.github}
-          website={this.state.enlargedProject.website}
-          description={this.state.enlargedProject.description}
-          gif={this.state.enlargedProject.gif}
-          background={this.state.enlargedProject.background}
-        /> 
-      </div>
-    }
 
     return(
       <div className="ProjectList">
-        {enlargedProject}
         <div  className="ProjectList__LeftSide"> 
           <div className="ProjectList__LeftSide__AboutMe">
             <AboutMe/>
           </div>
         </div>
         <div className="ProjectList__RightSide">
-          <h3 style={{position: 'fixed'}}>PROJECTS</h3>
+          <h3>PROJECTS</h3>
           {this.state.projects.map(project => {
             return (
-              <Card
-                key={project.title}
+              <ProjectView
+                className="Card"
                 title={project.title}
+                github={project.github}
+                website={project.website}
+                description={project.description}
+                gif={project.gif}
                 background={project.background}
-                clicked={() => this.showProject(project)} />
+              /> 
               )
           })}
         <div className='Bottom'></div>
