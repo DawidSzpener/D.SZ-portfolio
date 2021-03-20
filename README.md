@@ -7,11 +7,9 @@
 
 # TODO
 
-- list of projects should look list a list of <ProjectsViews />
 - add lazyloading
 - add navigation
 - add navbar
 - add new animations
-- add project's technology list
 - add more description to projects
 - extend aboutme into bigger slides
