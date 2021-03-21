@@ -6,6 +6,9 @@ import Ricipici from '../../assets/images/ricipici.gif'
 import Acebook from '../../assets/images/acebook.gif'
 import SAS from '../../assets/images/sas.gif'
 import linkedin from '../../assets/images/linkedin.png'
+import github from '../../assets/images/github.png'
+import instagram from '../../assets/images/instagram.png'
+import facebook from '../../assets/images/linkedin.png'
 
 import '../ProjectList/ProjectList.scss';
 
@@ -53,6 +56,26 @@ class ProjectList extends Component {
             </div>
           </a>
 
+          <a className="icon" href="https://github.com/DawidSzpener" target="_blank" rel="noopener noreferrer">
+            <img alt="github" src={github} />
+            <div className="tooltip">
+              Github
+            </div>
+          </a>
+
+          <a className="icon" href="https://www.instagram.com/dawidek2909/" target="_blank" rel="noopener noreferrer">
+            <img alt="instagram" src={instagram} />
+            <div className="tooltip">
+              Instagra
+            </div>
+          </a>
+
+          <a className="icon" href="https://www.facebook.com/dawid.szpener.5" target="_blank" rel="noopener noreferrer">
+            <img alt="facebook" src={facebook} />
+            <div className="tooltip">
+              Facebook
+            </div>
+          </a>
 
           </div>
         </div>

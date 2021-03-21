@@ -178,6 +178,7 @@ a {
   color: #FB8096;
   text-decoration: none;
   cursor: pointer;
+  margin: 18px 10px;
 
   &:before {
     content: "";
@@ -250,10 +251,6 @@ a {
     &__SocialMedia {
       left: 8px;
       width: 40px;
-
-      &a.icon {
-        margin: 14px 10px;
-      }
     }
   }
 }
