@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './ProjectView.scss'
 import Button from '../UI/Button/Button'
+import separator from '../../assets/images/separator.png'
+
 
 class ProjectView extends Component {
 
@@ -22,6 +24,7 @@ class ProjectView extends Component {
         <div className="RightSide">
           <div className='RightSide__Gif'><img style={{borderRadius: '6px'}} src={this.props.gif} alt="gif"></img></div>
         </div>
+        <img className="separator" alt="separator" src={separator}/>
       </div>
     )
   }

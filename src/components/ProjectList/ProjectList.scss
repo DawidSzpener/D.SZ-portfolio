@@ -21,6 +21,41 @@
   }
 }
 
+.separator {
+  width: auto;
+  height: auto;
+  margin: 70px auto;
+  display: block;
+  padding-top: 100px;
+}
+
+.HelloContainer {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Average,serif";
+  font-size: 20px;
+  line-height: 1.42857143;
+  height: 350px;
+  margin: 200px 56px 0 56px;
+
+  &__Left {
+    display: inline-block;
+    width: 50%;
+  }
+
+  &__Right {
+    display: inline-block;
+    width: 50%;
+  }
+
+  &--text {
+    font-size: 1.5vw;
+    color: grey;
+    letter-spacing: 0.4px;
+    text-transform: none;
+  }
+}
+
 .Name {
   font-weight: bold;
   font-family: "Indie Flower", cursive;
@@ -36,7 +71,7 @@
   width: 820px;
   height: 60px;
   line-height: 65px;
-  margin: 180px auto 0;
+  margin: 60px auto 0;
   visibility: visible;
 
   &-name {
@@ -56,6 +91,28 @@
     box-shadow: 4px 4p 20px 2px #FFD2D7;
     transition: opacity 0.8s, transform 0.8s;
     animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 forwards;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  &-web {
+    z-index: 1;
+    transition: opacity 0.8s, transform 0.8s;
+    animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 forwards;
+  }
+
+  &-web-bg {
+    position: absolute;
+    z-index: 0;
+    background-color: #FFA0AB;
+    height: 48px;
+    width: 619px;
+    top: 27px;
+    left: 131px;
+    box-shadow: 4px 4p 20px 2px #FFD2D7;
+    transition: opacity 0.8s, transform 0.8s;
+    animation: slideInFromLeft 1.3s 1 ease-in-out, fadeIn 0s 1 forwards;
     animation-fill-mode: both;
     animation-delay: 0.5s;
     opacity: 0;
@@ -99,7 +156,7 @@
 
   &__RightSide {
     padding-top: 1%;
-    margin: 10% 1% 1% 1%;
+    margin: 16% 1% 1% 1%;
     float: left;
     width: 98%;
     height: 98%;
@@ -109,7 +166,7 @@
     margin: 1%;
     float: left;
     width: 98%;
-    height: 98%;
+    height: auto;
 
     &__AboutMe {
       width: 45.5%;
@@ -300,11 +357,13 @@ a {
 
 @keyframes slideInFromLeft {
   0% {
+    opacity: 0;
     transform: translateX(-100%);
   }
 
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 

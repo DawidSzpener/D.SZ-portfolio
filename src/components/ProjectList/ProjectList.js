@@ -22,7 +22,7 @@ class ProjectList extends Component {
       {title: "RICIPICI", technology: "Javascript, React.js, Node, Firebase, Redux, Sass, Jasmine", background: Ricipici, gif: Ricipici, github: "https://github.com/DawidSzpener/Ripicipi", website: "https://ricipici.herokuapp.com/", description: "An E-notebook full of various cooking recipes seperated by categories, with an option to add you'r own dishes to the menu"},
       {title: "SIMPLE ASSET TRACKER", technology: "Python, Javascript, Django, PostgreSQL, Selenium, React.js, Bootstrap, Python unittest", background: SAS, gif: SAS, github: "https://github.com/makersacademy/simpleassettracker", website: "https://simple-asset-tracker.herokuapp.com/", description: "Simplest way to track a company's physical assets. Built with smaller start-ups in mind - where you don't need a load of fancy features"},
       {title: "BURGER BUILDER", technology: "Javascript, React.js, Redux, Node, Firebase, Jasmine", background: Burger, gif: Burger, github: "https://github.com/DawidSzpener/Burger", website: "https://burger-dsz.herokuapp.com/", description: "Build you'r own burger and order it online right to you'r hands, no need to leave the comfort of you'r house."},
-      {title: "ACEBOOK", technology: "Ruby, Ruby on Rails, PostgreSQL Capybara, Selenium", background: Acebook, gif: Acebook, github: "https://github.com/Hyan18/acebook-luckerberg", website: "https://acebook-luckerberg.herokuapp.com/", description: "Facebook clone, built during The Makers Academy course with a group of amazing people. Register, login and post or comment under you'r friends topics."}
+      {title: "ACEBOOK", technology: "Ruby, Ruby on Rails, PostgreSQL, Capybara, Selenium", background: Acebook, gif: Acebook, github: "https://github.com/Hyan18/acebook-luckerberg", website: "https://acebook-luckerberg.herokuapp.com/", description: "Facebook clone, built during The Makers Academy course with a group of amazing people. Register, login and post or comment under you'r friends topics."}
     ],
     enlarge: false,
   }
@@ -88,8 +88,38 @@ class ProjectList extends Component {
             <AboutMe/>
           </div>
         </div>
+        <div className="Name" style={{marginTop: '630px'}}>
+          <span className="Name-web">Web developer</span>
+          <div className="Name-web-bg"></div>
+        </div>
+        <div className="HelloContainer">
+          <div className="HelloContainer__Left">
+            <h3 style={{fontSize: '2em', letterSpacing: '0px', lineHeight: '40px'}}>Hello!</h3>
+            <h4 className="HelloContainer--text">
+              I’m passionate about CSS animations, web development and design.
+              Designing and creating my own projects allows me to explore and express my creativity and inner world.
+              I've been a web developer and integrator for nearly 2 years.
+              Lover of the planet, nature, animals, food, music and people. I add passion and respect to everything I do.
+              I spend most of my spare time reading, playing board games, cooking or tinkering with my projects. 
+              I am very dedicated towards achieving my goals whether it's work or life.
+              I have been developing a recipe website (Ricipici) for over a year now using React.js.
+              I believe what brings expertise and mastery is not your skills but your hard work and passion.
+            </h4>
+          </div>
+          <div className="HelloContainer__Right">
+            <h3 style={{fontSize: '2em', letterSpacing: '0px', lineHeight: '40px'}}>A little bit more background</h3>
+            <h4 className="HelloContainer--text">
+              I started my adventure as a developer in 2019 in London as a Ruby on Rails developer.
+              I explored areas like frontend, backend, JS, agile (SCRUM), hosting, or web design.
+              I lean towards the visual and artistic. I've been focusing on responsive web design, HTML5, CSS3, React.js, some backend and user interactions.
+              I love looking from the user's eyes, deepening, empathizing with them, and challenging myself to develop creative solutions.
+              Indeed that's why I fell in love with Design Thinking, which seeks to understand the user, challenges all assumptions, and aims to find answers that seemed invisible at first glance.
+              Last but not least, I'm available for hire on freelance projects.
+            </h4>
+          </div>
+        </div>
         <div className="ProjectList__RightSide">
-          <h3>PROJECTS</h3>
+          <h3 style={{marginTop: '50px'}}>PROJECTS</h3>
           {this.state.projects.map(project => {
             return (
               <ProjectView
