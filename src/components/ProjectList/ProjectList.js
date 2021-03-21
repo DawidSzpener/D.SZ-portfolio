@@ -5,6 +5,7 @@ import Burger from '../../assets/images/burger.gif'
 import Ricipici from '../../assets/images/ricipici.gif'
 import Acebook from '../../assets/images/acebook.gif'
 import SAS from '../../assets/images/sas.gif'
+import linkedin from '../../assets/images/linkedin.png'
 
 import '../ProjectList/ProjectList.scss';
 
@@ -42,6 +43,19 @@ class ProjectList extends Component {
     return(
       <div className="ProjectList">
         <div className="ProgressBar"/>
+        <div className="SideDrawer">
+          <div className="SideDrawer__SocialMedia">
+
+          <a className="icon" href="https://www.linkedin.com/in/dawid-szpener-b853021a1/" target="_blank" rel="noopener noreferrer">
+            <img alt="linkedin" src={linkedin} />
+            <div className="tooltip">
+              LinkedIn
+            </div>
+          </a>
+
+
+          </div>
+        </div>
         <div  className="ProjectList__LeftSide"> 
           <div className="ProjectList__LeftSide__AboutMe">
             <AboutMe/>
@@ -52,6 +66,7 @@ class ProjectList extends Component {
           {this.state.projects.map(project => {
             return (
               <ProjectView
+                key={project.title}
                 className="Card"
                 technology={project.technology}
                 title={project.title}

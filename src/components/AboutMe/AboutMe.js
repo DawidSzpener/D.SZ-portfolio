@@ -31,32 +31,32 @@ const AboutMe = () => (
     <div className="AboutMeSlides">
       <img id="img03" src={ja01} alt="obrazek"/>
       <img id="img04" src={ja02} alt="obrazek"/>
-      <h1/>
+      <h1 style={{opacity: '0'}}>1</h1>
     </div>
     <div className="AboutMeSlides">
       <img id="img03" src={fishing01} alt="obrazek"/>
       <img id="img04" src={fishing02} alt="obrazek"/>
-      <h1/>
+      <h1 style={{opacity: '0'}}>1</h1>
     </div>
     <div className="AboutMeSlides">
       <img style={{marginTop: "5%"}} id="img01" src={makers02} alt="obrazek"/>
       <img style={{marginTop: "2%"}} id="img02" src={makers01} alt="obrazek"/>
-      <h1/>
+      <h1 style={{opacity: '0'}}>1</h1>
     </div>
     <div className="AboutMeSlides">
       <img style={{marginTop: "3%"}}  id="img07" src={travel02} alt="obrazek"/>
       <img style={{marginTop: "8%"}} id="img08" src={travel01} alt="obrazek"/>
-      <h1/>
+      <h1 style={{opacity: '0'}}>1</h1>
     </div>
     <div className="AboutMeSlides">
       <img id="img05" src={cooking01} alt="obrazek"/>
       <img style={{marginTop: "10%"}} id="img06" src={cooking02} alt="obrazek"/>
-      <h1/>
+      <h1 style={{opacity: '0'}}>1</h1>
     </div>
     <div className="AboutMeSlides">
       <img id="img09" src={strzal01} alt="obrazek"/>
       <img id="img10" src={strzal02} alt="obrazek"/>
-      <h1/>
+      <h1 style={{opacity: '0'}}>1</h1>
     </div>
   </Slider>
 );
