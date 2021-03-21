@@ -21,6 +21,47 @@
   }
 }
 
+.Name {
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  font-size: 102px;
+  color: #2C2C2C;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: all 0.5s 0s ease-out;
+  width: 820px;
+  height: 60px;
+  line-height: 65px;
+  margin: 180px auto 0;
+  visibility: visible;
+
+  &-name {
+    z-index: 1;
+    transition: opacity 0.8s, transform 0.8s;
+    animation: slideInFromLeft 1.3s 1 ease-in-out, fadeIn 0s 1 forwards;
+  }
+
+  &-bg {
+    position: absolute;
+    z-index: 0;
+    background-color: #FFA0AB;
+    height: 48px;
+    width: 619px;
+    top: 27px;
+    left: 131px;
+    box-shadow: 4px 4p 20px 2px #FFD2D7;
+    transition: opacity 0.8s, transform 0.8s;
+    animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 forwards;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+}
+
 .SideDrawer {
   height: 100%;
   background-color: #FFD2D7;
@@ -34,10 +75,7 @@
   background: -moz-linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
   background: -webkit-linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
   background: linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
-
-  &__SocialMedia {
-
-  }
+  animation: fade-in 1.3s 1 ease-in-out, fadeIn 1s 1 forwards;
 }
 
 .ProgressBar {
@@ -77,9 +115,14 @@
       width: 45.5%;
       height: 80%;
       padding: 5px;
-      margin: 15% 0% 4% 15%;
+      margin: auto;
+      margin-top: 50px;
       align-content: center;
       box-sizing: border-box;
+      opacity: 0;
+      animation: fade-in 1.3s 1 ease-in-out, fadeIn 0s 1 forwards;
+      animation-fill-mode: both;
+      animation-delay: 0.5s;
     }
   }
 }
@@ -262,5 +305,27 @@ a {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

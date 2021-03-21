@@ -46,6 +46,10 @@ class ProjectList extends Component {
     return(
       <div className="ProjectList">
         <div className="ProgressBar"/>
+        <div className="Name">
+          <span className="Name-name">Dawid Szpener</span>
+          <div className="Name-bg"></div>
+        </div>
         <div className="SideDrawer">
           <div className="SideDrawer__SocialMedia">
 
