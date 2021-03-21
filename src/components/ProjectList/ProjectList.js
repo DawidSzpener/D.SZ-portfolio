@@ -41,6 +41,7 @@ class ProjectList extends Component {
 
     return(
       <div className="ProjectList">
+        <div className="ProgressBar"/>
         <div  className="ProjectList__LeftSide"> 
           <div className="ProjectList__LeftSide__AboutMe">
             <AboutMe/>

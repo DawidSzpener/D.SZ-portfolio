@@ -21,6 +21,16 @@
   }
 }
 
+.ProgressBar {
+  height: 6px;
+  width: 100vw;
+  background-color: #FB8096;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  animation: slideInFromLeft 2.3s 1 ease-in-out, fadeIn 0s 1 forwards;
+}
+
 .ProjectList {
   background-color: rgb(250, 247, 233);
   opacity: 1;
@@ -141,5 +151,15 @@ h4 {
   h4 {
     font-size: 4vw;
     padding: 5% 0 2% 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
