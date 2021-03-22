@@ -9,6 +9,7 @@ import linkedin from '../../assets/images/linkedin.png'
 import github from '../../assets/images/github.png'
 import instagram from '../../assets/images/instagram.png'
 import facebook from '../../assets/images/linkedin.png'
+import overtimer from '../../assets/images/overtimer.gif'
 
 import '../ProjectList/ProjectList.scss';
 
@@ -21,6 +22,7 @@ class ProjectList extends Component {
       {title: "CELLULAR AUTOMATON", technology: "Javascript, React.js, MongoDB, Express, Node, Jest", background: CSS, gif: CSS, github: 'https://github.com/Hyan18/the-css', website: 'https://the-css.herokuapp.com/', description: "A single player game, evolution dependant on initial state. Using Conway's game of life you can solve puzzles on a single page web app"},
       {title: "RICIPICI", technology: "Javascript, React.js, Node, Firebase, Redux, Sass, Jasmine", background: Ricipici, gif: Ricipici, github: "https://github.com/DawidSzpener/Ripicipi", website: "https://ricipici.herokuapp.com/", description: "An E-notebook full of various cooking recipes seperated by categories, with an option to add you'r own dishes to the menu"},
       {title: "SIMPLE ASSET TRACKER", technology: "Python, Javascript, Django, PostgreSQL, Selenium, React.js, Bootstrap, Python unittest", background: SAS, gif: SAS, github: "https://github.com/makersacademy/simpleassettracker", website: "https://simple-asset-tracker.herokuapp.com/", description: "Simplest way to track a company's physical assets. Built with smaller start-ups in mind - where you don't need a load of fancy features"},
+      {title: "OVERTIMER", technology: "Ruby, Ruby on Rails, PostgreSQL, Sass, Devise, Bootstrap, Administrate, Pundit, Capybara, Selenium", background: overtimer, gif: overtimer, github: "https://github.com/DawidSzpener/Overtimer", website: "www.google.com", description: "Overtimer - application meant to help and automate managing overtime hours. Log in as a user and ask for approval or as an admin to check your employees requests"},
       {title: "BURGER BUILDER", technology: "Javascript, React.js, Redux, Node, Firebase, Jasmine", background: Burger, gif: Burger, github: "https://github.com/DawidSzpener/Burger", website: "https://burger-dsz.herokuapp.com/", description: "Build you'r own burger and order it online right to you'r hands, no need to leave the comfort of you'r house."},
       {title: "ACEBOOK", technology: "Ruby, Ruby on Rails, PostgreSQL, Capybara, Selenium", background: Acebook, gif: Acebook, github: "https://github.com/Hyan18/acebook-luckerberg", website: "https://acebook-luckerberg.herokuapp.com/", description: "Facebook clone, built during The Makers Academy course with a group of amazing people. Register, login and post or comment under you'r friends topics."}
     ],

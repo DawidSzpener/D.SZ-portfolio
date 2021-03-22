@@ -12,4 +12,3 @@
 - add navbar
 - add new animations
 - add more description to projects
-- extend aboutme into bigger slides

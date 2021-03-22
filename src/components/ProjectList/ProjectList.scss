@@ -299,6 +299,11 @@ a {
   cursor: pointer;
   margin: 18px 10px;
 
+  &:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &:before {
     content: "";
     position: absolute;
