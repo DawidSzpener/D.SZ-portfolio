@@ -53,6 +53,7 @@
     color: grey;
     letter-spacing: 0.4px;
     text-transform: none;
+    margin-top: 50px;
   }
 }
 
@@ -107,7 +108,7 @@
     z-index: 0;
     background-color: #FFA0AB;
     height: 48px;
-    width: 619px;
+    width: 605px;
     top: 27px;
     left: 131px;
     box-shadow: 4px 4p 20px 2px #FFD2D7;
@@ -116,6 +117,23 @@
     animation-fill-mode: both;
     animation-delay: 0.5s;
     opacity: 0;
+  }
+
+  &-projects {
+    z-index: 1;
+    transition: opacity 0.8s, transform 0.8s;
+  }
+
+  &-projects-bg {
+    position: absolute;
+    z-index: 0;
+    background-color: #FFA0AB;
+    height: 48px;
+    width: 325px;
+    top: 27px;
+    left: 281px;
+    box-shadow: 4px 4p 20px 2px #FFD2D7;
+    transition: opacity 0.8s, transform 0.8s;
   }
 }
 

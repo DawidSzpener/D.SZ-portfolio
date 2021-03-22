@@ -88,7 +88,7 @@ class ProjectList extends Component {
             <AboutMe/>
           </div>
         </div>
-        <div className="Name" style={{marginTop: '630px'}}>
+        <div className="Name" style={{marginTop: '540px'}}>
           <span className="Name-web">Web developer</span>
           <div className="Name-web-bg"></div>
         </div>
@@ -98,7 +98,7 @@ class ProjectList extends Component {
             <h4 className="HelloContainer--text">
               I’m passionate about CSS animations, web development and design.
               Designing and creating my own projects allows me to explore and express my creativity and inner world.
-              I've been a web developer and integrator for nearly 2 years.
+              I've been a web developer and designer for nearly 2 years.
               Lover of the planet, nature, animals, food, music and people. I add passion and respect to everything I do.
               I spend most of my spare time reading, playing board games, cooking or tinkering with my projects. 
               I am very dedicated towards achieving my goals whether it's work or life.
@@ -119,7 +119,10 @@ class ProjectList extends Component {
           </div>
         </div>
         <div className="ProjectList__RightSide">
-          <h3 style={{marginTop: '50px'}}>PROJECTS</h3>
+        <div className="Name">
+          <span className="Name-projects">Projects</span>
+          <div className="Name-projects-bg"></div>
+        </div>
           {this.state.projects.map(project => {
             return (
               <ProjectView
