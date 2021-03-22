@@ -119,7 +119,7 @@ class ProjectList extends Component {
           </div>
         </div>
         <div className="ProjectList__RightSide">
-        <div className="Name">
+        <div className="Name" style={{marginBottom: '-100px'}} >
           <span className="Name-projects">Projects</span>
           <div className="Name-projects-bg"></div>
         </div>
@@ -138,7 +138,6 @@ class ProjectList extends Component {
               /> 
               )
           })}
-        <div className='Bottom'></div>
         </div>
       </div>
     )
