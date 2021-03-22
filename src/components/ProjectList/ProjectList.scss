@@ -76,12 +76,15 @@
   visibility: visible;
 
   &-name {
+    opacity: 0;
     z-index: 1;
     transition: opacity 0.8s, transform 0.8s;
-    animation: slideInFromLeft 1.3s 1 ease-in-out, fadeIn 0s 1 forwards;
+    animation: slideInFromLeft 1.3s 1 ease-in-out, fadeIn 0s 1 both;
+    animation-fill-mode: forwards;
   }
 
   &-bg {
+    opacity: 0;
     position: absolute;
     z-index: 0;
     background-color: #FFA0AB;
@@ -91,19 +94,22 @@
     left: 131px;
     box-shadow: 4px 4p 20px 2px #FFD2D7;
     transition: opacity 0.8s, transform 0.8s;
-    animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 forwards;
-    animation-fill-mode: both;
+    animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 both;
     animation-delay: 0.5s;
-    opacity: 0;
+    animation-fill-mode: forwards;
   }
 
   &-web {
+    opacity: 0;
     z-index: 1;
     transition: opacity 0.8s, transform 0.8s;
-    animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 forwards;
+    animation: slideInFromRight 1.3s 1 ease-in-out, fadeIn 1s 1 both;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
   }
 
   &-web-bg {
+    opacity: 0;
     position: absolute;
     z-index: 0;
     background-color: #FFA0AB;
@@ -113,10 +119,9 @@
     left: 131px;
     box-shadow: 4px 4p 20px 2px #FFD2D7;
     transition: opacity 0.8s, transform 0.8s;
-    animation: slideInFromLeft 1.3s 1 ease-in-out, fadeIn 0s 1 forwards;
-    animation-fill-mode: both;
-    animation-delay: 0.5s;
-    opacity: 0;
+    animation: slideInFromLeft 1.3s 1 ease-in-out, fadeIn 0s 1 both;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
   }
 
   &-projects {
@@ -381,8 +386,8 @@ a {
 
 @keyframes slideInFromLeft {
   0% {
-    opacity: 0;
     transform: translateX(-100%);
+    opacity: 0;
   }
 
   100% {
@@ -393,13 +398,13 @@ a {
 
 @keyframes slideInFromRight {
   0% {
-    opacity: 0;
     transform: translateX(100%);
+    opacity: 0;
   }
 
   100% {
-    opacity: 1;
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
